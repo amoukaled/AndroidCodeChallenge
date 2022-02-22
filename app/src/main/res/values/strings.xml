@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AndroidCodeChallenge</string>
+    <string name="timer">Timer</string>
+    <string name="list_view">List View</string>
+    <string name="logout">Logout</string>
+    <string name="logo">Logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="incorrect_credentials">Incorrect username/password</string>
+    <string name="field_mandatory">Field is mandatory</string>
+    <string name="logout_prompt">Are you sure you want to logout?</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="close_prompt">Are you sure you want to quit?</string>
+    <string name="quit">Quit</string>
+    <string name="network_error">Network Error</string>
+    <string name="title">Title:</string>
+    <string name="id">ID:</string>
+    <string name="user_id">User ID:</string>
+    <string name="completed">Completed:</string>
+    <string name="completed_icon">Completed Icon</string>
+    <string name="first_login">First Login</string>
+    <string name="todo">Todo</string>
+</resources>

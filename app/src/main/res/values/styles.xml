@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Material TextField Style  -->
+    <style name="TextFieldStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCornerRadiusTopStart">@dimen/text_field_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/text_field_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/text_field_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/text_field_corner_radius</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginRight">2.5dp</item>
+        <item name="android:layout_marginLeft">2.5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="boxStrokeColor">?attr/colorSecondary</item>
+        <item name="hintTextColor">?attr/colorSecondary</item>
+    </style>
+
+</resources>

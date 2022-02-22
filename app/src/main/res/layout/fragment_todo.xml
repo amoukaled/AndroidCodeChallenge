@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/infoCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/titleCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/pill_background"
+            android:backgroundTint="@color/red50"
+            app:layout_constraintBottom_toTopOf="@id/idCL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titleHintTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="@string/title"
+                android:textColor="@color/red700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/titleTV"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:textColor="@color/red700"
+                android:textSize="20sp"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/titleHintTV"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/idCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/pill_background"
+            android:backgroundTint="@color/green50"
+            app:layout_constraintBottom_toTopOf="@id/userIDCL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleCL">
+
+            <TextView
+                android:id="@+id/idHintTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="@string/id"
+                android:textColor="@color/green700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/idTV"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/green700"
+                android:textSize="20sp"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/idHintTV"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="123" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/userIDCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/pill_background"
+            android:backgroundTint="@color/blue50"
+            app:layout_constraintBottom_toTopOf="@id/completedCL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/idCL">
+
+            <TextView
+                android:id="@+id/userIDHintTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="@string/user_id"
+                android:textColor="@color/blue700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/userIDTV"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userIDTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/blue700"
+                android:textSize="20sp"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintStart_toEndOf="@id/userIDHintTV"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="123" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/completedCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/pill_background"
+            android:backgroundTint="@color/teal50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userIDCL">
+
+            <TextView
+                android:id="@+id/completedHintTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="@string/completed"
+                android:textColor="@color/teal700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/completedIV"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/completedIV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/completed_icon"
+                android:padding="10dp"
+                android:textColor="@color/teal700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/completedHintTV"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_cross" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
